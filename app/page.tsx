@@ -43,50 +43,6 @@ function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; 
   );
 }
 
-// Мобильное меню
-function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
-  return (
-    <div
-      className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${
-        isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-      }`}
-    >
-      {/* Оверлей */}
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
-      
-      {/* Меню */}
-      <div
-        className={`absolute top-16 right-0 w-64 bg-[var(--background)] border-l border-[var(--border)] transform transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
-        <nav className="flex flex-col p-6 gap-4">
-          <Link
-            href="#stack"
-            onClick={onClose}
-            className="text-lg text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors py-2"
-          >
-            Стек
-          </Link>
-          <Link
-            href="#project"
-            onClick={onClose}
-            className="text-lg text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors py-2"
-          >
-            Проект
-          </Link>
-          <Link
-            href="#contact"
-            onClick={onClose}
-            className="text-lg text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors py-2"
-          >
-            Контакты
-          </Link>
-        </nav>
-      </div>
-    </div>
-  );
-}
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -95,7 +51,7 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur-md">
-        <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+        <div className="mx-auto flex h-16 max-w-5xl items-center justify-center px-4 sm:px-6">
           <Link href="/" className="flex items-center gap-2 sm:gap-3 transition-opacity hover:opacity-80">
             <img
               src="/photo_2026-09-23_18-56-57.jpg"
@@ -107,43 +63,9 @@ export default function Home() {
             </span>
           </Link>
 
-          {/* Десктоп меню */}
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="#stack" className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]">
-              Стек
-            </Link>
-            <Link href="#project" className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]">
-              Проект
-            </Link>
-            <Link href="#contact" className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]">
-              Контакты
-            </Link>
-          </div>
-
-          {/* Мобильная кнопка меню */}
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2 text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-            aria-label="Меню"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              {isMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
-          </button>
+      
         </div>
       </nav>
-
-      {/* Мобильное меню */}
-      <MobileMenu isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
 
       {/* Hero Section */}
       <section className="relative flex min-h-screen flex-col justify-center px-4 sm:px-6 pt-24 pb-16 md:pt-16">
@@ -369,7 +291,7 @@ export default function Home() {
       <footer className="border-t border-[var(--border)] py-6 sm:py-8 px-4 sm:px-6">
         <div className="mx-auto flex max-w-5xl flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[var(--text-secondary)]">
           <p>© {new Date().getFullYear()} Булат Ихсанов</p>
-          <p className="font-mono text-xs">Next.js + Tailwind CSS</p>
+          <p className="font-mono text-xs">made by Amorfa (Unidoka)</p>
         </div>
       </footer>
     </main>
