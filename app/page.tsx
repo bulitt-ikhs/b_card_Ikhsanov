@@ -53,11 +53,6 @@ export default function Home() {
       <nav className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/90 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-5xl items-center justify-center px-4 sm:px-6">
           <Link href="/" className="flex items-center gap-2 sm:gap-3 transition-opacity hover:opacity-80">
-            <img
-              src="/photo_2026-09-23_18-56-57.jpg"
-              alt="Логотип"
-              className="h-8 w-8 rounded-lg object-cover"
-            />
             <span className="text-sm font-medium tracking-tight">
               BULAT.IKHSANOV
             </span>
@@ -71,7 +66,7 @@ export default function Home() {
       <section className="relative flex min-h-screen flex-col justify-center px-4 sm:px-6 pt-24 pb-16 md:pt-16">
         <div className="absolute inset-0 z-0">
           <img
-            src="/nRli5XhQn42B9U1te-Ox4fdj2UNZ_6j6G1HZxbCPDWyUMhTosAno210pvIqb5rco2Auq0sHUzUB5HR4gl-75xq5d.jpg"
+            src="/Srgx9jlXCAj6qb_9PSF7k_AmdA-Ab8kMAUePVx8MMUpdx1Zw3fjAu_DGfv6mTYPky4cFBex_EvHc7TCDZJEI0QgV (1).jpg"
             alt=""
             className="h-full w-full object-cover opacity-20"
           />
