@@ -43,7 +43,6 @@ function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; 
   );
 }
 
-
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -57,8 +56,6 @@ export default function Home() {
               BULAT.IKHSANOV
             </span>
           </Link>
-
-      
         </div>
       </nav>
 
@@ -209,51 +206,41 @@ export default function Home() {
             </div>
           </Reveal>
 
-
-
-
-
-
-          
           <Reveal delay={200}>
-  <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
-    <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
-        Мобильное приложение видеохостинга
-      </h3>
-      <Link
-        href="https://github.com/bulitt-ikhs/IndividualWork"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
-      >
-        Исходный код →
-      </Link>
-    </div>
+            <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
+              <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+                  Мобильное приложение видеохостинга
+                </h3>
+                <Link
+                  href="https://github.com/bulitt-ikhs/IndividualWork"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
+                >
+                  Исходный код →
+                </Link>
+              </div>
 
-    <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
-      Кроссплатформенное приложение на <span className="text-[var(--text-primary)] font-medium">Flutter</span>, взаимодействующее с REST API. 
-      Реализует безопасную аутентификацию, ленту просмотра видео, загрузку пользовательского контента и интеграцию с{" "}
-      <span className="text-[var(--text-primary)] font-medium">Yandex Object Storage</span> через S3 API для управления медиатекой.
-    </p>
+              <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
+                Кроссплатформенное приложение на <span className="text-[var(--text-primary)] font-medium">Flutter</span>, взаимодействующее с REST API. 
+                Реализует безопасную аутентификацию, ленту просмотра видео, загрузку пользовательского контента и интеграцию с{" "}
+                <span className="text-[var(--text-primary)] font-medium">Yandex Object Storage</span> через S3 API для управления медиатекой.
+              </p>
 
-    <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
-      {["Flutter", "Dart", "REST API", "AWS SDK", "Cross-platform"].map((tech) => (
-        <span
-          key={tech}
-          className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
-        >
-          {tech}
-        </span>
-      ))}
-    </div>
-  </div>
-</Reveal>
+              <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
+                {["Flutter", "Dart", "REST API", "AWS SDK", "Cross-platform"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </Reveal>
 
-
-
-
-          
           <Reveal delay={100}>
             <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
               <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
@@ -272,8 +259,8 @@ export default function Home() {
 
               <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
                 С товарищами создали сайт <span className="text-[var(--text-primary)] font-medium">на базе Amorfa</span> в рамках МосТранс Хакатона.
-                При делении обязанностей дали задание: сделать редизайн, {" "}
-                <span className="text-[var(--text-primary)] font-medium"> результаты работы можете посмотреть сами.
+                При делении обязанностей дали задание: сделать редизайн,{" "}
+                <span className="text-[var(--text-primary)] font-medium">результаты работы можете посмотреть сами</span>.
               </p>
 
               <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
@@ -289,11 +276,6 @@ export default function Home() {
             </div>
           </Reveal>
 
-
-
-
-          
-          
           <Reveal delay={200}>
             <p className="mt-6 sm:mt-8 text-center text-sm text-[var(--text-secondary)]">
               Также pet-проект на базе{" "}
