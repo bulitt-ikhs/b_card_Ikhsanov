@@ -86,8 +86,18 @@ export default function Home() {
 
           <Reveal delay={200}>
             <p className="max-w-2xl text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
-              Фокус на чистом коде, производительности и масштабируемости.
-              Основной стек — .NET. Так же работаю с Python, Flutter и облачными решениями.
+              Фокус на чистом коде, производительности и масштабируемости. 
+              Основной стек — .NET. Также проектирую используя Python, Flutter, Next.js и облачные решения. 
+              Работаю в составе команды агентства{" "}
+              <Link
+                href="https://rovno.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--text-primary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:decoration-[var(--accent)] hover:text-[var(--accent)]"
+              >
+                Rovno.dev
+              </Link>
+              .
             </p>
           </Reveal>
 
@@ -166,118 +176,121 @@ export default function Home() {
 
       {/* Project Section */}
       <section id="project" className="border-t border-[var(--border)] py-16 sm:py-24 md:py-32 px-4 sm:px-6">
-        <div className="mx-auto max-w-5xl">
+                <div className="mx-auto max-w-5xl">
           <Reveal>
             <h2 className="mb-8 sm:mb-16 text-2xl sm:text-3xl font-semibold tracking-tight">Пример работы</h2>
           </Reveal>
 
-          <Reveal delay={100}>
-            <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
-              <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                  Backend для мобильного видеохостинга
-                </h3>
-                <Link
-                  href="https://github.com/bulitt-ikhs/IndividualWorkAPIv2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
-                >
-                  Исходный код →
-                </Link>
-              </div>
-
-              <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
-                REST API на <span className="text-[var(--text-primary)] font-medium">ASP.NET Core WebAPI</span> для мобильного приложения на Flutter.
-                Безопасная аутентификация, управление метаданными видео, интеграция с{" "}
-                <span className="text-[var(--text-primary)] font-medium">Yandex Object Storage</span> через AWS SDK для хранения пользовательского контента.
-              </p>
-
-              <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
-                {["C#", "Entity Framework", "PostgreSQL", "AWS SDK", "S3 API", "Docker"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
+          {/* Контейнер для вертикальных отступов между кейсами */}
+          <div className="space-y-8 sm:space-y-12">
+            <Reveal delay={100}>
+              <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
+                <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+                    Backend для мобильного видеохостинга
+                  </h3>
+                  <Link
+                    href="https://github.com/bulitt-ikhs/IndividualWorkAPIv2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
                   >
-                    {tech}
-                  </span>
-                ))}
+                    Исходный код →
+                  </Link>
+                </div>
+
+                <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
+                  REST API на <span className="text-[var(--text-primary)] font-medium">ASP.NET Core WebAPI</span> для мобильного приложения на Flutter.
+                  Безопасная аутентификация, управление метаданными видео, интеграция с{" "}
+                  <span className="text-[var(--text-primary)] font-medium">Yandex Object Storage</span> через AWS SDK для хранения пользовательского контента.
+                </p>
+
+                <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
+                  {["C#", "Entity Framework", "PostgreSQL", "AWS SDK", "S3 API", "Docker"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          </Reveal>
+            </Reveal>
+
+            <Reveal delay={200}>
+              <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
+                <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+                    Мобильное приложение видеохостинга
+                  </h3>
+                  <Link
+                    href="https://github.com/bulitt-ikhs/IndividualWork"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
+                  >
+                    Исходный код →
+                  </Link>
+                </div>
+
+                <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
+                  Кроссплатформенное приложение на <span className="text-[var(--text-primary)] font-medium">Flutter</span>, взаимодействующее с REST API. 
+                  Реализует безопасную аутентификацию, ленту просмотра видео, загрузку пользовательского контента и интеграцию с{" "}
+                  <span className="text-[var(--text-primary)] font-medium">Yandex Object Storage</span> через S3 API для управления медиатекой.
+                </p>
+
+                <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
+                  {["Flutter", "Dart", "REST API", "AWS SDK", "Cross-platform"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+
+            <Reveal delay={100}>
+              <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
+                <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
+                    Сайт для МосгорТранс
+                  </h3>
+                  <Link
+                    href="https://github.com/vershiny-top/mos-trans-hack-2026"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
+                  >
+                    Исходный код →
+                  </Link>
+                </div>
+
+                <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
+                  С товарищами создали сайт <span className="text-[var(--text-primary)] font-medium">на базе Amorfa</span> в рамках МосТранс Хакатона.
+                  Разработал frontend, и{" "}
+                  <span className="text-[var(--text-primary)] font-medium">результаты работы можете посмотреть сами</span>.
+                </p>
+
+                <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
+                  {["Next.JS", "TypeScript", "Amorfa", "Docker"].map((tech) => (
+                    <span
+                      key={tech}
+                      className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          </div>
 
           <Reveal delay={200}>
-            <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
-              <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                  Мобильное приложение видеохостинга
-                </h3>
-                <Link
-                  href="https://github.com/bulitt-ikhs/IndividualWork"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
-                >
-                  Исходный код →
-                </Link>
-              </div>
-
-              <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
-                Кроссплатформенное приложение на <span className="text-[var(--text-primary)] font-medium">Flutter</span>, взаимодействующее с REST API. 
-                Реализует безопасную аутентификацию, ленту просмотра видео, загрузку пользовательского контента и интеграцию с{" "}
-                <span className="text-[var(--text-primary)] font-medium">Yandex Object Storage</span> через S3 API для управления медиатекой.
-              </p>
-
-              <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
-                {["Flutter", "Dart", "REST API", "AWS SDK", "Cross-platform"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={100}>
-            <div className="rounded-lg border border-[var(--border)] p-6 sm:p-8 md:p-12 transition-all duration-300 hover:border-[var(--accent)]/50 hover:bg-[var(--card)]/50">
-              <div className="mb-6 sm:mb-8 flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-                <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold">
-                  Сайт для МосгорТранс
-                </h3>
-                <Link
-                  href="https://github.com/vershiny-top/mos-trans-hack-2026"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-[var(--text-secondary)] underline decoration-[var(--border)] underline-offset-4 transition-colors hover:text-[var(--text-primary)] hover:decoration-[var(--text-primary)] whitespace-nowrap"
-                >
-                  Исходный код →
-                </Link>
-              </div>
-
-              <p className="mb-6 sm:mb-8 max-w-3xl text-[var(--text-secondary)] leading-relaxed">
-                С товарищами создали сайт <span className="text-[var(--text-primary)] font-medium">на базе Amorfa</span> в рамках МосТранс Хакатона.
-                При делении обязанностей дали задание: сделать редизайн,{" "}
-                <span className="text-[var(--text-primary)] font-medium">результаты работы можете посмотреть сами</span>.
-              </p>
-
-              <div className="flex flex-wrap gap-2 border-t border-[var(--border)] pt-6">
-                {["Next.JS", "TypeScript", "Amorfa", "Docker"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="rounded-md border border-[var(--border)] px-3 py-1.5 text-xs sm:text-sm text-[var(--text-secondary)] transition-colors hover:border-[var(--accent)]/50 hover:text-[var(--text-primary)]"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </Reveal>
-
-          <Reveal delay={200}>
-            <p className="mt-6 sm:mt-8 text-center text-sm text-[var(--text-secondary)]">
+            <p className="mt-8 sm:mt-12 text-center text-sm text-[var(--text-secondary)]">
               Также pet-проект на базе{" "}
               <Link
                 href="https://github.com/unidoka/g-docs-any-ai"
