@@ -82,8 +82,8 @@ export default function Home() {
 
           <Reveal delay={100}>
             <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight leading-tight">
-              Проектирую качественные <br />
-              <span className="text-[var(--text-secondary)]">проекты с клиентской и серверной архитектурой</span>
+              Проектирую проекты <br />
+              <span className="text-[var(--text-secondary)]">под ваши нужды</span>
             </h1>
           </Reveal>
 
