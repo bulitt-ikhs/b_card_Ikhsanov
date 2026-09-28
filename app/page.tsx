@@ -301,7 +301,7 @@ export default function Home() {
 
           <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { label: "Telegram", value: "@bulat_ikhs", href: "https://t.me/bulat_ikhs" },
+              { label: "Instagram", value: "@bulik_ikhs", href: "https://instagram.com/bulik_ikhs" },
               { label: "Email", value: "ikhsanovbulitt@icloud.com", href: "mailto:ikhsanovbulitt@icloud.com" },
               { label: "GitHub", value: "bulitt-ikhs", href: "https://github.com/bulitt-ikhs" },
               { label: "GitHub (pet)", value: "lfiddd", href: "https://github.com/lfiddd" },
